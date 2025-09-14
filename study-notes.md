@@ -10,7 +10,11 @@
 
 点击create repository
 
+<<<<<<< HEAD
 main分支修改的内容
+=======
+dev分支的修改内容
+>>>>>>> dev
 
 mkdir      *#新建文件夹*
 
@@ -113,7 +117,10 @@ git push
 # 
 
 "main֧޸"
+<<<<<<< HEAD
 "dev֧޸"
 "dev֧޸"
 "main֧޸"
+=======
+>>>>>>> dev
 
