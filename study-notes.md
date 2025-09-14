@@ -109,13 +109,4 @@ git push
 
 
 
-# 
-
-"main֧޸"
-<<<<<<< HEAD
-"dev֧޸"
-"dev֧޸"
-"main֧޸"
-=======
->>>>>>> dev
 
