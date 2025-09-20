@@ -191,6 +191,39 @@ git diff --cached  #查看已add但未commit的修改
 
 git diff main. .dev #比较main和dev的差异
 
+##交互式变基（rebase -i）--整理提交记录
+
+1.git rebase -i HEAD~n  #合并最近n个提交
+
+2.按i进入编辑模式
+
+3.将后两个commit前的pick 改为squash，合并到上一个提交
+
+4.按Esc键输入：wq(如果出错，输入：q!强制退出不保存然后重来)
+
+ （*修改历史commit   慎用！！！）
+
+git rebase -i HEAD~2#修改最近两个提交
+
+将pick 改为edit 然后修改文件，完成后用git rebase --continue
+
+##精选提交（cherry-pick）--移植特定修改
+
+1.查看dev 分支的id (git log dev -oneline)
+
+2.把dev分支的某个commit应用到main(git cherry-pick <commit_id>)
+
+3.git cherry-pick --continue
+
+4.按Esc键输入：wq(如果出错，输入：q!强制退出不保存然后重来)
+
+5.完成以后强制推送 git push -f origin main
+
+##打标签
+
+git tag v1.0.0 -m "第一个稳定版本"
+
+git push --tags
 
 
 
